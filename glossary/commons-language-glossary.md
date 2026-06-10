@@ -471,7 +471,7 @@ Metagov is the working laboratory for this synthesis. More than $2 million chann
 
 9. Renaissance Philanthropy. "Open Source for Science Fund Launches." [https://www.renaissancephilanthropy.org/insights/open-source-for-science-fund-launches](https://www.renaissancephilanthropy.org/insights/open-source-for-science-fund-launches). May 2026. New multi-donor fund ($20M anchor from Biohub and Wellcome) for scientific OSS.
 
-10. Sané, Andrew. "The Eight Principles, Read from the Operator's Seat." Prepared for the OSS Funding Workshop, UN Open Source Week, June 22, 2026. The narrative companion to this glossary; available at Metagov.
+10. Ngeseyan, Andrew. "The Eight Principles, Read from the Operator's Seat." Prepared for the OSS Funding Workshop, UN Open Source Week, June 22, 2026. The narrative companion to this glossary; available at Metagov.
 
 11. OpenSSL. Wikipedia. [https://en.wikipedia.org/wiki/OpenSSL](https://en.wikipedia.org/wiki/OpenSSL). Documents the Heartbleed crisis (2014), the CII emergency response, and the 2024 Foundation/Corporation governance bifurcation.
 

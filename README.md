@@ -88,7 +88,7 @@ Attribution: Commons FinOps, Andrew Ngeseyan, ASN Management LLC. https://github
 
 If you cite this work, please use:
 
-> Sané, Andrew. (2026). _Commons FinOps: A Documented Practice for Fiscally Sponsored, Polycentric Institutions._ ASN Management LLC. https://github.com/asnmgt/commons-finops
+> Ngeseyan, Andrew. (2026). _Commons FinOps: A Documented Practice for Fiscally Sponsored, Polycentric Institutions._ ASN Management LLC. https://github.com/asnmgt/commons-finops
 
 ---
 
