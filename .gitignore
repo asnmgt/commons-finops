@@ -25,3 +25,4 @@ TODO.local.md
 .vscode/
 .idea/
 *.iml
+*.patch
