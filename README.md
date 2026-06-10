@@ -55,18 +55,27 @@ The full operational translation lives in [`narrative/eight-principles-from-the-
 4. **For translation across domains**, use the glossary. Especially helpful when bridging commons theorists, OSS funders, fiscal sponsor practitioners, and traditional nonprofit finance.
 5. **For proof of practice**, read the Metagov case study. It shows what a year of doing this work actually looks like, with the numbers, the issues, and the resolutions.
 
+## How to engage with Commons FinOps
+
+Three layers, depending on where your institution is and what you need next:
+
+1. **Community.** Free. Read, fork, adapt the repo. Open issues. Join the working group as it forms.
+2. **Diagnostic.** Paid, scoped. A structured outside read on readiness or audit posture, with a written report.
+3. **Embedded.** Paid, ongoing fractional engagement through ASN Management LLC.
+
+See [`ENGAGE.md`](./ENGAGE.md) for the full menu, typical engagement shapes, and how to start.
+
 ## How to contribute
 
 This is documented practice, not a finished standard. If you operate a fiscal sponsor, a foundation, a sponsored project, or a polycentric institution and you see gaps, errors, or extensions, open an issue or a pull request. The intent is for this practice to compound over many practitioners, not stay locked to one.
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the simple intake process.
 
-## About the maintainer
+## About the practice
 
-Andrew Ngeseyan is Finance and Operations Director at Metagov and Principal at [ASN Management LLC](https://asnmgt.com). $27M business, 18 years, 16 clean federal and state audits at Community Roots. He runs Commons FinOps as a fractional FinOps practice for fiscal sponsors, foundations, and OSS funding cores.
+Commons FinOps was developed and is maintained by Andrew Ngeseyan, drawing on 18+ years of senior finance and operations leadership across Community Roots Charter Schools (CFO, 16 clean federal and state audits across 12 years), The LeadersTrust (COO/CFO, $27M social impact build with fiscal sponsorship infrastructure), and Metagov (current; Finance and Operations Director of a 501(c)(3) fiscal sponsor for digital governance research, $2M+ channeled annually).
 
-- Practice: [ASN Management LLC](mailto:andrew@asnmgt.com)
-- Currently: Finance and Operations Director, [Metagov Inc.](https://metagov.org)
+See [`ABOUT.md`](./ABOUT.md) for the full institutional background, the lineage of the practice, and why it is offered open.
 
 ## License
 

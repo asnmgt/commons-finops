@@ -26,3 +26,4 @@ TODO.local.md
 .idea/
 *.iml
 *.patch
+*.tar.gz
