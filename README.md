@@ -4,7 +4,7 @@
 
 Commons FinOps is the discipline that translates Elinor Ostrom's eight design principles for enduring commons into the operational requirements that fiscal sponsors, foundations, and OSS funding cores must meet to function. It sits at the seam between three rooms that most practitioners treat separately: nonprofit fiscal sponsorship, open source software funding, and digital governance research.
 
-This repository is the working reference set. It is built from operational practice running the financial and operations function of [Metagov](https://metagov.org), a 501(c)(3) fiscal sponsor for digital governance research, where the year one record includes over $2M in fiscal sponsorship funding channeled, first independent audit completed, and the first written onboarding manual delivered.
+This repository is the working reference set. It is built from operational practice running the financial and operations function of [Metagov](https://metagov.org), a 501(c)(3) fiscal sponsor for digital governance research, where the year one record includes over $2M in fiscal sponsorship funding channeled, the first written onboarding manual delivered, and the operational foundation set for the organization's first independent audit.
 
 ## Why this exists
 
@@ -63,7 +63,7 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the simple intake process.
 
 ## About the maintainer
 
-Andrew Ngeseyan is Finance and Operations Director at Metagov and Principal at [ASN Management LLC](https://asnmgt.com). $27M business, 18 years, 12 clean audits. He runs Commons FinOps as a fractional FinOps practice for fiscal sponsors, foundations, and OSS funding cores.
+Andrew Ngeseyan is Finance and Operations Director at Metagov and Principal at [ASN Management LLC](https://asnmgt.com). $27M business, 18 years, 16 clean federal and state audits at Community Roots. He runs Commons FinOps as a fractional FinOps practice for fiscal sponsors, foundations, and OSS funding cores.
 
 - Practice: [ASN Management LLC](mailto:andrew@asnmgt.com)
 - Currently: Finance and Operations Director, [Metagov Inc.](https://metagov.org)

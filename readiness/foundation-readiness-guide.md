@@ -11,7 +11,7 @@ Fiscal sponsorship produces a specific kind of misunderstanding at intake. The p
 
 This guide is for both parties at once. It names what "foundation readiness" actually means in a Commons FinOps frame, gives each side a practical diagnostic, and works through the real cases that taught the lessons written here. The Atlas Computing transition. The AWS gift reconciliation. Metagov's 2026 sponsee pipeline. These are not hypothetical examples. They are the live test cases.
 
-I have run the finance and operations function of a fiscally sponsored research network. I have channeled more than $27 million in business activity over 18 years across 12 clean audits. What follows is what I know from doing the work.
+I have run the finance and operations function of a fiscally sponsored research network. I have channeled more than $27 million in business activity over 18 years across 16 clean federal and state audits at Community Roots. What follows is what I know from doing the work.
 
 ---
 

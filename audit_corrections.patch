@@ -1,0 +1,164 @@
+diff --git a/README.md b/README.md
+index c794448..5ff8ef9 100644
+--- a/README.md
++++ b/README.md
+@@ -4,7 +4,7 @@
+ 
+ Commons FinOps is the discipline that translates Elinor Ostrom's eight design principles for enduring commons into the operational requirements that fiscal sponsors, foundations, and OSS funding cores must meet to function. It sits at the seam between three rooms that most practitioners treat separately: nonprofit fiscal sponsorship, open source software funding, and digital governance research.
+ 
+-This repository is the working reference set. It is built from operational practice running the financial and operations function of [Metagov](https://metagov.org), a 501(c)(3) fiscal sponsor for digital governance research, where the year one record includes over $2M in fiscal sponsorship funding channeled, first independent audit completed, and the first written onboarding manual delivered.
++This repository is the working reference set. It is built from operational practice running the financial and operations function of [Metagov](https://metagov.org), a 501(c)(3) fiscal sponsor for digital governance research, where the year one record includes over $2M in fiscal sponsorship funding channeled, the first written onboarding manual delivered, and the operational foundation set for the organization's first independent audit.
+ 
+ ## Why this exists
+ 
+@@ -63,7 +63,7 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the simple intake process.
+ 
+ ## About the maintainer
+ 
+-Andrew Ngeseyan is Finance and Operations Director at Metagov and Principal at [ASN Management LLC](https://asnmgt.com). $27M business, 18 years, 12 clean audits. He runs Commons FinOps as a fractional FinOps practice for fiscal sponsors, foundations, and OSS funding cores.
++Andrew Ngeseyan is Finance and Operations Director at Metagov and Principal at [ASN Management LLC](https://asnmgt.com). $27M business, 18 years, 16 clean federal and state audits at Community Roots. He runs Commons FinOps as a fractional FinOps practice for fiscal sponsors, foundations, and OSS funding cores.
+ 
+ - Practice: [ASN Management LLC](mailto:andrew@asnmgt.com)
+ - Currently: Finance and Operations Director, [Metagov Inc.](https://metagov.org)
+diff --git a/case-studies/metagov-year-one.md b/case-studies/metagov-year-one.md
+index ee4a41a..40d507f 100644
+--- a/case-studies/metagov-year-one.md
++++ b/case-studies/metagov-year-one.md
+@@ -14,7 +14,7 @@
+ 
+ The work spanned the full finance and operations function of a fiscal sponsor: onboarding and managing sponsored projects, maintaining the financial system of record, managing restricted grants, running treasury including digital assets, handling compliance, supporting the board, and developing a long-term sustainability plan. Over the period, the portfolio channeled more than $2M in active research funding across projects including Atlas Computing, Public AI, Calm Technology, and the Grant Innovation Lab, with clean reporting trails to funders and project-level accounting.
+ 
+-The organization works closely with Liz Barry as Executive Director and a board including Nathan Schneider, Michael Zargham, and Primavera de Filippi. External audit runs through EisnerAmper. Legal review runs through Karl Mill at Mill Law Center. Metagov's anchor funder for core operations is One Project, with that grant concluding in 2028.
++The organization works closely with Liz Barry as Executive Director and a board including Nathan Schneider, Michael Zargham, and Primavera de Filippi. EisnerAmper serves as the CPA. Legal review runs through Karl Mill at Mill Law Center. Metagov's anchor funder for core operations is One Project, with that grant concluding in 2028.
+ 
+ ---
+ 
+@@ -60,7 +60,7 @@ The reconciliation discipline that recurred throughout the work treated the gene
+ 
+ ## 6. Treasury and Digital Assets
+ 
+-Treasury work included standing up reliable processes for non-traditional asset intake. The posture was conservative and stablecoin-weighted, appropriate for funds largely held on behalf of projects. The digital asset workflow ran from on-chain receipt into an institutional multi-signature wallet, through Coinbase Prime as the off-ramp intermediary for converting USDC to fiat, and into Mercury, since the bank cannot accept direct on-chain deposits. Routine treasury activity over the period included monitoring USDC and ETH movements, processing weekly payment runs that consistently settled within two to three business days, and managing virtual cards for project-level subscriptions. Crypto audit-trail documentation was an active workstream in support of the first independent audit.
++Treasury work included standing up reliable processes for non-traditional asset intake. The posture was conservative and stablecoin-weighted, appropriate for funds largely held on behalf of projects. The digital asset workflow ran from on-chain receipt into an institutional multi-signature wallet, through Coinbase Prime as the off-ramp intermediary for converting USDC to fiat, and into Mercury, since the bank cannot accept direct on-chain deposits. Routine treasury activity over the period included monitoring USDC and ETH movements, processing weekly payment runs that consistently settled within two to three business days, and managing virtual cards for project-level subscriptions. Crypto audit-trail documentation was an active workstream in preparation for the organization's first independent audit.
+ 
+ ---
+ 
+@@ -96,7 +96,7 @@ The operational rhythm included weekly all-staff Slack standups produced in two
+ 
+ ## 11. Compliance
+ 
+-Compliance obligations active over the period included Form 990 preparation, a Massachusetts independent audit triggered by crossing the state audit threshold (Metagov's first independent audit, conducted by EisnerAmper), and 1099 issuance. A specific 1099 issue arose around travel and reimbursements being potentially included incorrectly in contractor compensation, prompting follow-up with the CPAs to confirm and refile if needed. A W-2 discrepancy requiring escalation was also flagged. The first audit in particular represented a significant operational lift, and the relationships with the external auditor and outside counsel were maintained as standing rather than assembled under deadline pressure.
++Compliance obligations active over the period included Form 990 preparation, preparation for Metagov's first Massachusetts independent audit (triggered by crossing the state audit threshold), and 1099 issuance. A specific 1099 issue arose around travel and reimbursements being potentially included incorrectly in contractor compensation, prompting follow-up with the CPAs to confirm and refile if needed. A W-2 discrepancy requiring escalation was also flagged. Preparing for the first audit represented a significant operational lift, and the relationships with the external auditor and outside counsel were established as standing rather than assembled under deadline pressure.
+ 
+ ---
+ 
+diff --git a/glossary/commons-language-glossary.md b/glossary/commons-language-glossary.md
+index e1dd7ad..ffe1896 100644
+--- a/glossary/commons-language-glossary.md
++++ b/glossary/commons-language-glossary.md
+@@ -15,7 +15,7 @@ This glossary exists to make that translation faster and more precise.
+ 
+ **Source disciplines.** The commons-side vocabulary draws on Elinor Ostrom's Governing the Commons (1990), the Institutional Analysis and Development (IAD) framework she developed with colleagues at Indiana University's Workshop in Political Theory and Policy Analysis, and forty years of empirical research on how resource-sharing communities sustain themselves across fisheries, forests, irrigation systems, and digital infrastructure. The OSS funding vocabulary draws on practice: what fiscal sponsors actually do, what funders actually ask for, what auditors actually examine.
+ 
+-**The proof point.** Metagov Inc. is the operating example throughout this glossary. Metagov is a 501(c)(3) fiscal sponsor for digital governance research, audited by EisnerAmper, with One Project as its anchor funder at $150K per year through 2028. In its first full operating year, Metagov channeled more than $2 million in fiscal sponsorship funding, completed its first independent audit with a clean opinion, published its first written onboarding manual, and closed the Atlas Computing to Renaissance Philanthropy project transfer. Five sponsored projects are in active development across a budget range from under $10,000 to $200,000. Metagov is not a hypothetical. It is the laboratory in which these translations are being tested in real time.
++**The proof point.** Metagov Inc. is the operating example throughout this glossary. Metagov is a 501(c)(3) fiscal sponsor for digital governance research, with EisnerAmper as its CPA and One Project as its anchor funder at $150K per year through 2028. In its first full operating year, Metagov channeled more than $2 million in fiscal sponsorship funding, set the operational foundation for its first independent audit, published its first written onboarding manual, and closed the Atlas Computing to Renaissance Philanthropy project transfer. Five sponsored projects are in active development across a budget range from under $10,000 to $200,000. Metagov is not a hypothetical. It is the laboratory in which these translations are being tested in real time.
+ 
+ ---
+ 
+@@ -47,7 +47,7 @@ This glossary exists to make that translation faster and more precise.
+ 
+ **FinOps translation.** Each polycentric layer requires its own financial books and its own monitoring function. Cross-layer transactions (satellite to core, core to coordinating body) require defined accounting treatment. The FinOps requirement of a polycentric model is not optional overhead; it is the operational cost of sustaining the architecture.
+ 
+-**Practical example.** Metagov itself is a polycentric system in development. Five sponsored projects sit inside Metagov. Metagov sits inside a wider ecosystem including One Project (anchor funder), EisnerAmper (external monitor), and the emerging BLOOM^n / win^n institutional design that Liz Barry is developing as a potential coordinating layer above the fiscal sponsor level.
++**Practical example.** Metagov itself is a polycentric system in development. Five sponsored projects sit inside Metagov. Metagov sits inside a wider ecosystem including One Project (anchor funder), EisnerAmper (CPA), and the emerging BLOOM^n / win^n institutional design that Liz Barry is developing as a potential coordinating layer above the fiscal sponsor level.
+ 
+ ---
+ 
+@@ -99,7 +99,7 @@ Ostrom identified eight design principles that characterize commons institutions
+ 
+ **FinOps translation.** Nested enterprises generate specific accounting requirements: each layer needs its own chart-of-accounts dimension (class, fund, or project code), transactions between layers need defined accounting treatment (intercompany eliminations in consolidated statements, transfer pricing protocols, clear restricted fund release rules), and reporting must flow up cleanly from the deepest layer to the consolidated filing.
+ 
+-**Practical example.** Metagov's own nesting illustrates the architecture. Layer one: individual sponsored projects (The Wind Down, Relational Design Lab, Open Machine, NELA Computer Club, Civic AI Tools), each with its own class in the QuickBooks general ledger, its own restricted fund balance, and its own per-project statement of activity. Layer two: Metagov Inc. itself, the fiscal sponsor, which consolidates all project activity into a single Form 990 and a single audited statement. Layer three: the wider ecosystem of funders (One Project, anonymous digital identity funder, Toda Foundation), peer fiscal sponsors, and the emerging BLOOM^n coordination layer. The FinOps function at Metagov manages the layer-one/layer-two interface operationally every day. The layer-two/layer-three interface is managed through funder reporting, grant agreements, and the audit.
++**Practical example.** Metagov's own nesting illustrates the architecture. Layer one: individual sponsored projects (The Wind Down, Relational Design Lab, Open Machine, NELA Computer Club, Civic AI Tools), each with its own class in the QuickBooks general ledger, its own restricted fund balance, and its own per-project statement of activity. Layer two: Metagov Inc. itself, the fiscal sponsor, which consolidates all project activity into a single Form 990 and, once the first independent audit is complete, a single audited annual statement. Layer three: the wider ecosystem of funders (One Project, anonymous digital identity funder, Toda Foundation), peer fiscal sponsors, and the emerging BLOOM^n coordination layer. The FinOps function at Metagov manages the layer-one/layer-two interface operationally every day. The layer-two/layer-three interface is managed through funder reporting, grant agreements, and the audit.
+ 
+ ---
+ 
+@@ -137,7 +137,7 @@ Ostrom identified eight design principles that characterize commons institutions
+ 
+ **Commons meaning.** Ostrom's fifth design principle. Violations are punished with responses scaled to severity and repetition. First offenses receive mild responses. Repeated or egregious violations escalate. Binary punishment (compliant or expelled) destroys community trust and incentivizes hiding problems.
+ 
+-**FinOps translation.** A graduated sanctions framework, written before the first sanction is needed, is both a fairness mechanism and an audit readiness mechanism. EisnerAmper, during Metagov's first independent audit, had standard questions about how findings are raised, escalated, and resolved. "We handle it case by case" fails that test. "Here is the schedule, here is the log" passes.
++**FinOps translation.** A graduated sanctions framework, written before the first sanction is needed, is both a fairness mechanism and an audit readiness mechanism. Audit firms have standard questions about how findings are raised, escalated, and resolved, and Metagov's CPA at EisnerAmper has been preparing the books for that scrutiny. "We handle it case by case" fails that test. "Here is the schedule, here is the log" passes.
+ 
+ **Practical example.** A workable graduated schedule for a fiscal sponsor: missed reporting deadline, first instance: written reminder. Third missed deadline in twelve months: mandatory review meeting with written corrective plan. Modest misuse of restricted funds, self-reported: course correction, no public sanction. Material misuse discovered through audit: formal review, possible funder notification, possible termination. Pattern of misuse: termination, funder notification, recovery action.
+ 
+@@ -399,7 +399,7 @@ The annual federal information return required of tax-exempt organizations. Not
+ 
+ ### **Audit Threshold**
+ 
+-The revenue level above which a state requires an independent financial audit of a nonprofit organization. Thresholds vary by state; many states require an audit at $500,000 or $750,000 in annual revenue, with some as low as $250,000. At the federal level, the Single Audit Act imposes audit requirements on organizations spending $750,000 or more in federal awards in a single year. Crossing the audit threshold the first time is a significant operational lift: the audit firm (EisnerAmper for Metagov) will test internal controls, examine restricted fund accounting, and issue findings that become part of the public record. Building audit-ready practices before crossing the threshold is the strategic FinOps move: it is far cheaper to design the right controls from the start than to retrofit them under audit pressure.
++The revenue level above which a state requires an independent financial audit of a nonprofit organization. Thresholds vary by state; many states require an audit at $500,000 or $750,000 in annual revenue, with some as low as $250,000. At the federal level, the Single Audit Act imposes audit requirements on organizations spending $750,000 or more in federal awards in a single year. Crossing the audit threshold the first time is a significant operational lift: the audit firm will test internal controls, examine restricted fund accounting, and issue findings that become part of the public record. (For Metagov, EisnerAmper serves as the CPA preparing for that first independent audit.) Building audit-ready practices before crossing the threshold is the strategic FinOps move: it is far cheaper to design the right controls from the start than to retrofit them under audit pressure.
+ 
+ ---
+ 
+@@ -447,7 +447,7 @@ What is unique across domains is culture: funding cycle length, community norms
+ 
+ "Commons FinOps" is the right name for the discipline that holds this together because it names both the institutional form and the operational function. The commons side names the governance theory: Ostrom's eight principles, the polycentric architecture, the nested enterprise model, the collective choice mechanisms. The FinOps side names the operational practice: the general ledger, the restricted fund accounting, the audit trail, the reconciliation hierarchy, the treasury posture. Neither side alone is sufficient. Governance theory without operational grounding produces bylaws that look good and books that do not support them. Operational practice without governance theory produces technically compliant institutions that cannot make legitimate decisions and cannot build the trust of their communities over time.
+ 
+-Metagov is the working laboratory for this synthesis. More than $2 million channeled in year one. A first clean independent audit. Five sponsored projects ranging from a conscious organizational wind-down to a $200,000 AI safety research deposit. Fundraising across digital identity standards, interoperability conferences, speculative fiction prizes, and civic AI tools: a portfolio that spans every dimension of the commons governance and OSS funding world in miniature. The lessons from that laboratory, compressed into transferable schema, are what Commons FinOps offers the broader OSS funding ecosystem. The question is no longer whether this discipline is real. The question is whether it can be documented clearly enough to let the next domain core stand up without reinventing the operational infrastructure from scratch.
++Metagov is the working laboratory for this synthesis. More than $2 million channeled in year one. The operational foundation set for the organization's first independent audit. Five sponsored projects ranging from a conscious organizational wind-down to a $200,000 AI safety research deposit. Fundraising across digital identity standards, interoperability conferences, speculative fiction prizes, and civic AI tools: a portfolio that spans every dimension of the commons governance and OSS funding world in miniature. The lessons from that laboratory, compressed into transferable schema, are what Commons FinOps offers the broader OSS funding ecosystem. The question is no longer whether this discipline is real. The question is whether it can be documented clearly enough to let the next domain core stand up without reinventing the operational infrastructure from scratch.
+ 
+ ---
+ 
+diff --git a/narrative/eight-principles-from-the-operators-seat.md b/narrative/eight-principles-from-the-operators-seat.md
+index 5ae3dcf..b24e882 100644
+--- a/narrative/eight-principles-from-the-operators-seat.md
++++ b/narrative/eight-principles-from-the-operators-seat.md
+@@ -29,7 +29,7 @@ Metagov is operating this boundary rule explicitly right now. The fiscal sponsor
+ 
+ Our current sponsee pipeline reads the same way. Five projects are in active development: The Wind Down with Camille Acey, Relational Design Lab with LXCast, Open Machine with Ven Gist and Exeunt, North East Los Angeles Computer Club with Michael Appuhn, and Civic AI Tools with Nathan Storey. Every one of those project leads is personally known to one or more of our Research Directors. The funding outlook ranges from a trickle of individual donations to a $200,000 deposit ready to land. The boundary rule is the same across all of them.
+ 
+-Here is the operational consequence. Open Machine has $200,000 ready to be deposited. Once Metagov accepts that intake, the cash sits on our balance sheet, it is restricted to that project, and our 990 has to reflect it. It is not Metagov's money to spend. It is Open Machine's money, held in trust, under our tax exemption. If the boundary between "satellite of Metagov" and "not a satellite of Metagov" is fuzzy, we cannot answer the IRS, we cannot answer EisnerAmper at audit, and we cannot answer the funder.
++Here is the operational consequence. Open Machine has $200,000 ready to be deposited. Once Metagov accepts that intake, the cash sits on our balance sheet, it is restricted to that project, and our 990 has to reflect it. It is not Metagov's money to spend. It is Open Machine's money, held in trust, under our tax exemption. If the boundary between "satellite of Metagov" and "not a satellite of Metagov" is fuzzy, we cannot answer the IRS, we cannot answer our CPA at EisnerAmper or our auditor when the time comes, and we cannot answer the funder.
+ 
+ The schema your working group is designing has to specify boundary criteria that are machine determinable, not subjectively interpreted, because they will be tested. They will be tested by the IRS during 990 review. By foundation grant compliance officers. By auditors during fund balance reconciliation. By sponsees themselves when they want to know what they are signing up for.
+ 
+@@ -114,7 +114,7 @@ The middle path requires a documented sanctioning schedule. **A graduated sancti
+ 
+ These are not just rules. They are commitments. To satellites that they will be treated fairly. To funders that the commons institution can self police. To the auditor that there is a controls framework. Without graduated sanctions in writing, sanction decisions become political, ad hoc, and unjust.
+ 
+-A practical note that does not always make it into governance theory. The audit firm will ask. EisnerAmper, who conducted Metagov's first independent audit, has standard questions about how findings get raised, escalated, and resolved. If the answer is "we figure it out case by case," the auditor will look harder. If the answer is "here is the schedule, here is the log," the auditor moves on. Graduated sanctions are not just a fairness mechanism. They are an audit readiness mechanism.
++A practical note that does not always make it into governance theory. The audit firm will ask. Any auditor approaching Metagov's first independent audit will have standard questions about how findings get raised, escalated, and resolved. If the answer is "we figure it out case by case," the auditor will look harder. If the answer is "here is the schedule, here is the log," the auditor moves on. Graduated sanctions are not just a fairness mechanism. They are an audit readiness mechanism.
+ 
+ The fifth principle, translated: **write the sanctions schedule before you have to sanction anyone. Once a violation is in front of you, the temptation to handle it case by case is overwhelming, and the precedent you set becomes the rule.**
+ 
+@@ -181,7 +181,7 @@ If I had to name the single operational seam where the schema will succeed or fa
+ 
+ Classic Ostromian commons were governed by the people who used them. The OSS funding world introduces a second class of rule setters, funders, who shape outcomes without participating in the commons themselves. This is the genuinely new design challenge.
+ 
+-The fiscal sponsorship structure I run at Metagov holds this seam imperfectly. Some funders accept our governance and trust us to set rules. Others impose their own and treat us as a pass through. Most do something in between, on a per grant basis, in ways that are hard to predict and harder to systematize. EisnerAmper, our auditor, treats us as a single legal entity with consolidated obligations regardless of how the funders behave. The IRS does the same. Our chart of accounts has to absorb the variance.
++The fiscal sponsorship structure I run at Metagov holds this seam imperfectly. Some funders accept our governance and trust us to set rules. Others impose their own and treat us as a pass through. Most do something in between, on a per grant basis, in ways that are hard to predict and harder to systematize. EisnerAmper, our CPA, treats us as a single legal entity with consolidated obligations regardless of how the funders behave. The IRS does the same. Our chart of accounts has to absorb the variance.
+ 
+ A successful core and satellite schema must give cores a defensible position in this negotiation. That position comes from operational legitimacy. The books, the policies, the audit history, the documented adherence to the eight principles. Without that, cores are renting their legitimacy from funders. With it, they are negotiating from their own ground.
+ 
+@@ -212,7 +212,7 @@ This is the Commons FinOps contribution to the schema. The schema can be elegant
+ 
+ The work the workshop is starting is the most interesting operational design problem in nonprofit finance today. The eight principles give us a tested framework. The fiscal sponsorship structures already operating across the OSS ecosystem, Metagov among them, give us a starting set of working examples. The remaining work is to compress what those structures have learned into a transferable schema that lets new cores stand up cleanly instead of reinventing the operational infrastructure each time.
+ 
+-Metagov is in the middle of that work. We channeled more than $2 million in fiscal sponsorship funding in year one, built the first written onboarding manual, ran our first independent audit, closed the Atlas Computing transition cleanly, and stood up the systems that let us hold $200,000 of restricted Open Machine cash with the same controls we use for a $3,500 wind down grant. The five sponsees in our current pipeline, and the funder relationships behind them, are not theoretical examples. They are the live test cases for whether Commons FinOps is a real discipline or just language.
++Metagov is in the middle of that work. We channeled more than $2 million in fiscal sponsorship funding in year one, built the first written onboarding manual, set the operational foundation for our first independent audit, closed the Atlas Computing transition cleanly, and stood up the systems that let us hold $200,000 of restricted Open Machine cash with the same controls we use for a $3,500 wind down grant. The five sponsees in our current pipeline, and the funder relationships behind them, are not theoretical examples. They are the live test cases for whether Commons FinOps is a real discipline or just language.
+ 
+ I think it is a real discipline. I think it can be transferred. I think this room is the right room to start that transfer. I look forward to being useful in the work.
+ 
+diff --git a/readiness/foundation-readiness-guide.md b/readiness/foundation-readiness-guide.md
+index 7ab2320..7292d42 100644
+--- a/readiness/foundation-readiness-guide.md
++++ b/readiness/foundation-readiness-guide.md
+@@ -11,7 +11,7 @@ Fiscal sponsorship produces a specific kind of misunderstanding at intake. The p
+ 
+ This guide is for both parties at once. It names what "foundation readiness" actually means in a Commons FinOps frame, gives each side a practical diagnostic, and works through the real cases that taught the lessons written here. The Atlas Computing transition. The AWS gift reconciliation. Metagov's 2026 sponsee pipeline. These are not hypothetical examples. They are the live test cases.
+ 
+-I have run the finance and operations function of a fiscally sponsored research network. I have channeled more than $27 million in business activity over 18 years across 12 clean audits. What follows is what I know from doing the work.
++I have run the finance and operations function of a fiscally sponsored research network. I have channeled more than $27 million in business activity over 18 years across 16 clean federal and state audits at Community Roots. What follows is what I know from doing the work.
+ 
+ ---
+ 

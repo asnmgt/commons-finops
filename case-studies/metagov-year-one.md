@@ -14,7 +14,7 @@
 
 The work spanned the full finance and operations function of a fiscal sponsor: onboarding and managing sponsored projects, maintaining the financial system of record, managing restricted grants, running treasury including digital assets, handling compliance, supporting the board, and developing a long-term sustainability plan. Over the period, the portfolio channeled more than $2M in active research funding across projects including Atlas Computing, Public AI, Calm Technology, and the Grant Innovation Lab, with clean reporting trails to funders and project-level accounting.
 
-The organization works closely with Liz Barry as Executive Director and a board including Nathan Schneider, Michael Zargham, and Primavera de Filippi. External audit runs through EisnerAmper. Legal review runs through Karl Mill at Mill Law Center. Metagov's anchor funder for core operations is One Project, with that grant concluding in 2028.
+The organization works closely with Liz Barry as Executive Director and a board including Nathan Schneider, Michael Zargham, and Primavera de Filippi. EisnerAmper serves as the CPA. Legal review runs through Karl Mill at Mill Law Center. Metagov's anchor funder for core operations is One Project, with that grant concluding in 2028.
 
 ---
 
@@ -60,7 +60,7 @@ The reconciliation discipline that recurred throughout the work treated the gene
 
 ## 6. Treasury and Digital Assets
 
-Treasury work included standing up reliable processes for non-traditional asset intake. The posture was conservative and stablecoin-weighted, appropriate for funds largely held on behalf of projects. The digital asset workflow ran from on-chain receipt into an institutional multi-signature wallet, through Coinbase Prime as the off-ramp intermediary for converting USDC to fiat, and into Mercury, since the bank cannot accept direct on-chain deposits. Routine treasury activity over the period included monitoring USDC and ETH movements, processing weekly payment runs that consistently settled within two to three business days, and managing virtual cards for project-level subscriptions. Crypto audit-trail documentation was an active workstream in support of the first independent audit.
+Treasury work included standing up reliable processes for non-traditional asset intake. The posture was conservative and stablecoin-weighted, appropriate for funds largely held on behalf of projects. The digital asset workflow ran from on-chain receipt into an institutional multi-signature wallet, through Coinbase Prime as the off-ramp intermediary for converting USDC to fiat, and into Mercury, since the bank cannot accept direct on-chain deposits. Routine treasury activity over the period included monitoring USDC and ETH movements, processing weekly payment runs that consistently settled within two to three business days, and managing virtual cards for project-level subscriptions. Crypto audit-trail documentation was an active workstream in preparation for the organization's first independent audit.
 
 ---
 
@@ -96,7 +96,7 @@ The operational rhythm included weekly all-staff Slack standups produced in two 
 
 ## 11. Compliance
 
-Compliance obligations active over the period included Form 990 preparation, a Massachusetts independent audit triggered by crossing the state audit threshold (Metagov's first independent audit, conducted by EisnerAmper), and 1099 issuance. A specific 1099 issue arose around travel and reimbursements being potentially included incorrectly in contractor compensation, prompting follow-up with the CPAs to confirm and refile if needed. A W-2 discrepancy requiring escalation was also flagged. The first audit in particular represented a significant operational lift, and the relationships with the external auditor and outside counsel were maintained as standing rather than assembled under deadline pressure.
+Compliance obligations active over the period included Form 990 preparation, preparation for Metagov's first Massachusetts independent audit (triggered by crossing the state audit threshold), and 1099 issuance. A specific 1099 issue arose around travel and reimbursements being potentially included incorrectly in contractor compensation, prompting follow-up with the CPAs to confirm and refile if needed. A W-2 discrepancy requiring escalation was also flagged. Preparing for the first audit represented a significant operational lift, and the relationships with the external auditor and outside counsel were established as standing rather than assembled under deadline pressure.
 
 ---
 
