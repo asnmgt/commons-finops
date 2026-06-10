@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Working files
+*.tmp
+*.swp
+*~
+.~*
+
+# Build artifacts
+/dist/
+/build/
+
+# Local notes
+NOTES.local.md
+TODO.local.md
+
+# Audio (large files; link externally)
+*.mp3
+*.wav
+
+# Editor configs
+.vscode/
+.idea/
+*.iml
