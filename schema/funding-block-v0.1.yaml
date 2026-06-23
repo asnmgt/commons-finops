@@ -1,0 +1,101 @@
+# Funding Block v0.1
+# Canonical YAML reference for the funding-accountability interface block
+# in the Core-Satellite schema. See SCHEMA.md for full prose specification.
+
+$schema: "https://commonsfinops.org/schema/funding-block/v0.1"
+$id: "https://commonsfinops.org/schema/funding-block/v0.1#"
+title: "Funding Block v0.1"
+description: >
+  Machine-readable funding accountability interface for cores and
+  fiscally-hosted projects. Drafted at SciOS Core-Satellite Workshop,
+  UN Open Source Week, June 22, 2026.
+
+type: object
+required: [funding]
+properties:
+
+  funding:
+    type: object
+    required:
+      - fiscalHost
+      - ein
+      - ledger
+      - closeCadence
+      - auditStatus
+      - allocationRule
+      - classTaxonomy
+    properties:
+
+      fiscalHost:
+        type: string
+        description: Legal entity that holds funds on behalf of the project.
+        examples: ["NumFOCUS", "Open Source Collective", "Metagov", "Software Freedom Conservancy"]
+
+      ein:
+        type: string
+        description: US EIN in NN-NNNNNNN format, or equivalent national tax ID for non-US hosts.
+        pattern: "^\\d{2}-\\d{7}$"
+
+      ledger:
+        type: string
+        format: uri
+        description: Public ledger URL.
+        examples: ["https://opencollective.com/astropy"]
+
+      closeCadence:
+        type: string
+        enum: [monthly, quarterly]
+        description: Book-close cadence.
+
+      auditStatus:
+        oneOf:
+          - type: string
+            enum: [none, in-preparation, review, audit]
+          - type: string
+            pattern: "^clean-audit-streak-\\d+$"
+        description: >
+          Audit posture. Either a literal status, or 'clean-audit-streak-N'
+          where N is the number of consecutive years of unqualified opinions.
+
+      allocationRule:
+        type: string
+        enum:
+          - usage-weighted
+          - criticality-weighted
+          - roadmap-voted
+          - discretionary
+          - formula
+          - pass-through
+        description: Named value from the v0.1 allocation-rule vocabulary.
+
+      classTaxonomy:
+        type: array
+        description: >
+          Must include at least the three triple-duty axes (program, funder,
+          restriction). Additional axes permitted but not required.
+        items:
+          type: string
+        contains:
+          enum: [program, funder, restriction]
+        minItems: 3
+
+      disbursements:
+        type: string
+        format: uri
+        description: Append-only feed of disbursement transactions. JSON or CSV.
+
+      restrictedFundsPolicy:
+        type: string
+        format: uri
+        description: Link to the host's restricted funds policy document.
+
+      inKindPolicy:
+        type: string
+        format: uri
+        description: Link to the host's in-kind gift valuation policy.
+
+      hostOverhead:
+        type: number
+        minimum: 0
+        maximum: 1
+        description: Host indirect overhead rate as a decimal. Example: 0.15 for 15%.

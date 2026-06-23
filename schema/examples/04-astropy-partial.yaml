@@ -1,0 +1,18 @@
+# Modeled on AstroPy's current publishable funding-block state through
+# NumFOCUS as fiscal host. Demonstrates what a "partial core" looks like
+# in the v0.1 lens: legal scaffolding is solid (host, ledger, allocation
+# rule are clear), but four required fields are not yet publishable.
+#
+# Note: AstroPy is fully integrated under NumFOCUS, so the EIN that
+# belongs here is NumFOCUS's EIN, not AstroPy's. AstroPy has no separate
+# EIN. NumFOCUS already tracks program/funder/restriction in its internal
+# books; the missing piece is surfacing those tags to the public feed.
+funding:
+  fiscalHost: NumFOCUS
+  ledger: https://opencollective.com/astropy
+  allocationRule: roadmap-voted
+  # Missing required fields (validator will flag all four):
+  #   ein              <-- NumFOCUS EIN, public record
+  #   closeCadence
+  #   auditStatus      <-- NumFOCUS is annually audited, so clean-audit-streak-N
+  #   classTaxonomy    <-- The big one. Tracked internally, not published.

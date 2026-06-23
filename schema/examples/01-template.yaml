@@ -1,0 +1,15 @@
+# Funding Block v0.1 template.
+# Copy this file, fill in real values, validate with:
+#   python3 ../validator.py 01-template.yaml
+funding:
+  fiscalHost: <legal entity holding funds>
+  ein: <fiscal host EIN, format NN-NNNNNNN>
+  ledger: <public ledger URL>
+  closeCadence: monthly                 # or quarterly
+  auditStatus: in-preparation           # none | in-preparation | review | audit | clean-audit-streak-N
+  allocationRule: <named rule>          # see SCHEMA.md vocabulary
+  classTaxonomy: [program, funder, restriction]
+  disbursements: <append-only feed URL>
+  restrictedFundsPolicy: <URL>
+  inKindPolicy: <URL>
+  hostOverhead: 0.15                    # decimal, e.g. 0.15 = 15%

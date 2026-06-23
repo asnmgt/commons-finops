@@ -1,97 +1,74 @@
 # Commons FinOps
 
-**A documented financial and operational practice for fiscally sponsored, polycentric, commons-oriented institutions.**
+**An open operating standard for the people who run the books at fiscal sponsors, cores, and the projects they host.**
 
-Commons FinOps is the discipline that translates Elinor Ostrom's eight design principles for enduring commons into the operational requirements that fiscal sponsors, foundations, and OSS funding cores must meet to function. It sits at the seam between three rooms that most practitioners treat separately: nonprofit fiscal sponsorship, open source software funding, and digital governance research.
+If you fund open source, run a fiscal sponsor, host research software, or operate a public-goods grant program, this repository is for you. It's the working manual for how to publish funding accountability that funders, auditors, and AI agents can all read the same way.
 
-This repository is the working reference set. It is built from operational practice running the financial and operations function of [Metagov](https://metagov.org), a 501(c)(3) fiscal sponsor for digital governance research, where the year one record includes over $2M in fiscal sponsorship funding channeled, the first written onboarding manual delivered, and the operational foundation set for the organization's first independent audit.
+## What this is
 
-## Why this exists
+Commons FinOps is three things in one repo:
 
-The OSS funding world is in the middle of designing a core and satellite model for sustainable open infrastructure funding. That model is, in effect, a design exercise to implement Ostrom's eighth principle (nested enterprises) for OSS. It will succeed or fail based on whether the operational infrastructure underneath it can actually implement all eight principles in practice.
+1. **An operations and finance handbook.** Plain-language guidance anchored in real compliance frameworks: nonprofit GAAP (FASB ASC 958), federal Uniform Guidance (2 CFR 200), OFAC sanctions, 1099/W-8/W-9, restricted fund accounting, and clean monthly close discipline. Written by an operator, for operators.
 
-Most of the conversation in that design world lives at the governance layer. This repository names and documents the operational layer the design depends on: the books, the policies, the audit trails, the intake gates, the monitoring cadence, the conflict resolution paths, the graduated sanctions. The artifacts that turn governance theory into something a funder, an auditor, and a sponsee can each see and trust.
+2. **A machine-readable funding-accountability standard.** The `funding-block v0.1` schema lives in [`schema/`](./schema). It's the data interface that lets a funder evaluate one core covering fifty packages instead of running due diligence on fifty packages individually. YAML schema, working validator, and example fixtures included.
 
-## What's in this repo
+3. **A theoretical foundation, kept in its place.** Elinor Ostrom's eight principles for enduring commons are what makes the operational standard hold together over time. They live in [`foundation/`](./foundation). They're the why. The handbook and schema are the what and how.
 
-| Folder | Contents |
+## What this solves
+
+Funders today move money to fiscal sponsors, who hold restricted funds on behalf of grantees and disburse them. The bookkeeping discipline at the sponsor layer is the thing that determines whether everything downstream is real or theater. **Most of that discipline is invisible from the outside.** It lives in QuickBooks files, in monthly reconciliations, in audit workpapers that nobody publishes. As a result:
+
+- Funders can't compare cores. Every conversation with a new fiscal host starts from zero.
+- AI agents can't read funding accountability. The data is there; it just isn't surfaced.
+- Auditors keep finding the same problems in new organizations because nobody publishes a how-to.
+- Operators reinvent the wheel at every shop because the standard hasn't been written down.
+
+Commons FinOps publishes the standard so the next operator can inherit the work instead of paying the reinvention tax. The schema makes that work machine-readable so funders and agents can read it without asking the operator to translate.
+
+## Automation is a first-class concern
+
+Funders are signaling clearly that **automation is now a requirement, not a luxury**. Sponsors that can't expose ledgers, transaction tags, and audit status in machine-readable form will lose ground to sponsors that can. The handbook calls out, at every section, which steps can be automated, which require human review, and which audit trails need to survive the automation. Automation is not the opposite of compliance. It is the only way to make compliance scale.
+
+## What's in here
+
+| Path | Contents |
 |---|---|
-| [`narrative/`](./narrative) | The eight principles read as FinOps requirements, anchored to live ecosystem examples. The talk delivered at the UN Open Source Week funder gathering, June 22, 2026. |
-| [`handbook/`](./handbook) | The Financial Operations Handbook for fiscal sponsors and projects. Methodology source covering systems architecture, chart of accounts, fund accounting, reconciliation discipline, intake, grant management, treasury, and sustainability. |
-| [`readiness/`](./readiness) | The Foundation Readiness Guide. A two-sided diagnostic for prospective sponsees evaluating whether they're ready to be hosted, and for sponsors evaluating whether to take a project in. |
-| [`glossary/`](./glossary) | The Commons Language Glossary. A bilingual reference that translates commons theory and OSS funding vocabulary into FinOps mechanics, with worked examples across AstroPy, Bioconductor, Cryptography, SciPy, Privacy Tech (Tor, Signal), Civic Tech, Climate (Pangeo, OS-Climate), AI safety research, and OSS funding mechanisms. |
-| [`case-studies/`](./case-studies) | Year one record of Commons FinOps practice at Metagov. The Atlas Computing transition to Renaissance Philanthropy. The AWS gift reconciliation episode. The endowment proposal. The systems stack. |
-| [`templates/`](./templates) | Reserved for templates that operationalize the methodology (intake checklists, chart of accounts shapes, sanctions schedules). Placeholder for now. |
+| [`README.md`](./README.md) | You are here. |
+| [`handbook/`](./handbook) | The operations and finance handbook. Five plain-language sections covering the books, compliance gates, publishing data, fiscal sponsor operations, and working with funders. |
+| [`schema/`](./schema) | `funding-block v0.1`: the machine-readable spec. YAML schema, working Python validator, four worked example fixtures (template, filled-in sample, intentional-failure, real-world partial). |
+| [`foundation/`](./foundation) | Ostrom's eight principles as the theoretical foundation. The narrative as delivered at UN Open Source Week, June 22, 2026. The spoken cut. |
+| [`readiness/`](./readiness) | The Foundation Readiness Guide. A two-sided diagnostic for projects evaluating whether they're ready to be hosted, and for sponsors evaluating whether to take a project on. |
+| [`glossary/`](./glossary) | The Commons Language Glossary. Translates commons theory, OSS funding vocabulary, and traditional nonprofit finance into a single working vocabulary. |
+| [`case-studies/`](./case-studies) | Year-one record of Commons FinOps practice at Metagov. The Atlas Computing transition. The AWS gift reconciliation episode ($75K real receipt, $225K apparent value, fully traced). The endowment proposal. The systems stack. |
+| [`templates/`](./templates) | Operational templates: funding-block YAML template, monthly close checklist, audit-readiness checklist, sponsee onboarding checklist. |
+| [`ABOUT.md`](./ABOUT.md) | Author background, project history, scope. |
+| [`ENGAGE.md`](./ENGAGE.md) | How to engage. Tiers, pricing, contact. |
+| [`CHANGELOG.md`](./CHANGELOG.md) | Version history. |
 
 ## Who this is for
 
-- **Fiscal sponsor finance and operations leads** building or rebuilding the operational backbone of their organizations
-- **Prospective sponsees** evaluating their own readiness to be hosted, or comparing potential homes
-- **Foundation program officers** doing serious diligence on potential grantees and fiscal sponsors
-- **OSS funding designers** working on core and satellite models, pooled funds, or shared infrastructure for open source ecosystems
-- **Digital governance researchers** studying how polycentric institutions actually operate under real funding and compliance pressure
-- **AI safety, civic tech, climate tech, privacy tech, and open science communities** organized around shared infrastructure, where the institutional shell matters as much as the code
+- **Fiscal sponsor finance and operations leads** building or rebuilding the operational backbone of their organizations.
+- **Foundations and grantmakers** who want to publish a funding-accountability requirement that grantees can actually meet, or who want to evaluate a sponsor before committing.
+- **Open source funding designers** working on core-and-satellite models, pooled funds, or shared infrastructure for OSS ecosystems.
+- **Project leads and prospective sponsees** evaluating their own operational readiness, or comparing potential fiscal hosts.
+- **AI safety, civic tech, climate, privacy, and open science communities** organized around shared infrastructure, where the institutional shell matters as much as the code.
 
-## The eight principles, in one table
+## How to start
 
-| # | Principle | Operational requirement (FinOps translation) |
-|---|---|---|
-| 1 | Clearly defined boundaries | Written satellite intake and exit policy, written before anything else |
-| 2 | Congruence with local conditions | Layered rule architecture: regulator rules at the account layer, sponsorship choice at the class/project layer |
-| 3 | Collective choice arrangements | Sponsorship agreement as protocol for ongoing negotiation; standing channels before scale forces them |
-| 4 | Monitoring | Monitoring designed as a service to satellites, not control over them; same screen for monitor and monitored |
-| 5 | Graduated sanctions | Written sanctions schedule, drafted before the first sanction is needed |
-| 6 | Conflict resolution | Published resolution path; cheap to invoke; faster and lighter than outside counsel |
-| 7 | Minimal recognition of rights to organize | Operational maturity as the source of standing to push back on funder and platform over-reach |
-| 8 | Nested enterprises | Polycentric governance funded explicitly, including the layer-by-layer monitoring and reporting cost |
+1. **If you want the front door,** read this README and the handbook overview at [`handbook/00-overview.md`](./handbook/00-overview.md).
+2. **If you want to see the machine-readable standard,** open [`schema/SCHEMA.md`](./schema/SCHEMA.md) and the YAML examples in [`schema/examples/`](./schema/examples).
+3. **If you want to evaluate your own readiness,** start with [`readiness/foundation-readiness-guide.md`](./readiness/foundation-readiness-guide.md).
+4. **If you want the theoretical foundation,** read [`foundation/eight-principles-from-the-operators-seat.md`](./foundation/eight-principles-from-the-operators-seat.md).
+5. **If you want to engage,** see [`ENGAGE.md`](./ENGAGE.md).
 
-The full operational translation lives in [`narrative/eight-principles-from-the-operators-seat.md`](./narrative/eight-principles-from-the-operators-seat.md).
+## Why this works at the theory layer
 
-## How to use this repo
-
-1. **For a quick orientation**, read the narrative first. It is the connective tissue.
-2. **For methodology**, read the handbook. It is the procedural reference.
-3. **For evaluation**, use the readiness guide. It is structured as a checklist you can fill out.
-4. **For translation across domains**, use the glossary. Especially helpful when bridging commons theorists, OSS funders, fiscal sponsor practitioners, and traditional nonprofit finance.
-5. **For proof of practice**, read the Metagov case study. It shows what a year of doing this work actually looks like, with the numbers, the issues, and the resolutions.
-
-## How to engage with Commons FinOps
-
-Three layers, depending on where your institution is and what you need next:
-
-1. **Community.** Free. Read, fork, adapt the repo. Open issues. Join the working group as it forms.
-2. **Diagnostic.** Paid, scoped. A structured outside read on readiness or audit posture, with a written report.
-3. **Embedded.** Paid, ongoing fractional engagement through ASN Management LLC.
-
-See [`ENGAGE.md`](./ENGAGE.md) for the full menu, typical engagement shapes, and how to start.
-
-## How to contribute
-
-This is documented practice, not a finished standard. If you operate a fiscal sponsor, a foundation, a sponsored project, or a polycentric institution and you see gaps, errors, or extensions, open an issue or a pull request. The intent is for this practice to compound over many practitioners, not stay locked to one.
-
-See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the simple intake process.
-
-## About the practice
-
-Commons FinOps was developed and is maintained by Andrew Ngeseyan, drawing on 18+ years of senior finance and operations leadership across Community Roots Charter Schools (CFO, 16 clean federal and state audits across 12 years), The LeadersTrust (COO/CFO, $27M social impact build with fiscal sponsorship infrastructure), and Metagov (current; Finance and Operations Director of a 501(c)(3) fiscal sponsor for digital governance research, $2M+ channeled annually).
-
-See [`ABOUT.md`](./ABOUT.md) for the full institutional background, the lineage of the practice, and why it is offered open.
+Ostrom's research showed that commons sustained over generations all share eight design principles. The operating standard in this handbook is what it takes to actually implement those principles in a modern fiscal sponsor or OSS funding core. The principles aren't decoration. They're the load-bearing structure. They live in [`foundation/`](./foundation) so the operating layer can be read first, and the theory can be read by anyone who wants to know why this particular set of operational requirements and not some other set.
 
 ## License
 
-- Documentation in this repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE-docs).
-- Any code, templates, or scripts in this repository are licensed under the [MIT License](./LICENSE).
+Docs: CC BY 4.0 ([`LICENSE-docs`](./LICENSE-docs)). Code and schemas: MIT ([`LICENSE`](./LICENSE)).
 
-Attribution: Commons FinOps, Andrew Ngeseyan, ASN Management LLC. https://github.com/asnmgt/commons-finops
+## Author
 
-## Citation
-
-If you cite this work, please use:
-
-> Ngeseyan, Andrew. (2026). _Commons FinOps: A Documented Practice for Fiscally Sponsored, Polycentric Institutions._ ASN Management LLC. https://github.com/asnmgt/commons-finops
-
----
-
-Handle your business.
-
-Andrew Ngeseyan · ASN Management LLC · andrew@asnmgt.com
+Andrew Ngeseyan. Finance & Operations Director, [Metagov](https://metagov.org). ASN Management LLC. andrew@asnmgt.com.

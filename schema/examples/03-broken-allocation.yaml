@@ -1,0 +1,13 @@
+# Intentional failure. Demonstrates two specific schema violations:
+#   (1) allocationRule uses a value outside the named v0.1 vocabulary
+#   (2) classTaxonomy is missing the 'restriction' axis (triple-duty failure)
+# The validator should report both as ERRORs.
+funding:
+  fiscalHost: Example Core
+  ein: 00-0000000
+  ledger: https://opencollective.com/example
+  closeCadence: quarterly
+  auditStatus: review
+  allocationRule: vibes-based           # NOT in v0.1 vocabulary
+  classTaxonomy: [program, funder]      # MISSING 'restriction'
+  disbursements: https://opencollective.com/example/transactions.json

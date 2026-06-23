@@ -1,0 +1,15 @@
+# Funding Block v0.1 sample modeled on what a Metagov funding block
+# could look like at publication time. Values are illustrative; the EIN
+# placeholder must be replaced with Metagov's actual EIN before publishing.
+funding:
+  fiscalHost: Metagov
+  ein: 87-0000000                       # PLACEHOLDER. Replace with real Metagov EIN before publishing.
+  ledger: https://opencollective.com/metagov
+  closeCadence: monthly
+  auditStatus: in-preparation
+  allocationRule: discretionary
+  classTaxonomy: [program, funder, restriction]
+  disbursements: https://opencollective.com/metagov/transactions.json
+  restrictedFundsPolicy: https://metagov.org/policies/restricted-funds
+  inKindPolicy: https://metagov.org/policies/in-kind
+  hostOverhead: 0.15
