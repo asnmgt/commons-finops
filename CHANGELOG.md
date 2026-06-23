@@ -2,7 +2,7 @@
 
 All notable changes to Commons FinOps are recorded here. Format: [Keep a Changelog](https://keepachangelog.com). Versions follow semantic-ish versioning for the published schema; documentation evolves continuously.
 
-## [v0.1] — 2026-06-23
+## [v0.1] 2026-06-23
 
 First numbered release. Drafted at the SciOS Core-Satellite Workshop, UN Open Source Week, June 22, 2026, and published here as the canonical reference for early adopters.
 
