@@ -1,6 +1,6 @@
 # Commons FinOps
 
-**An open operating standard for the people who run the books at fiscal sponsors, cores, and the projects they host.**
+**An open-source FinOps standard for fiscal sponsors, cores, and the projects they host. Grounded in Ostrom's eight design principles for commons governance.**
 
 If you fund open source, run a fiscal sponsor, host research software, or operate a public-goods grant program, this repository is for you. It's the working manual for how to publish funding accountability that funders, auditors, and AI agents can all read the same way.
 

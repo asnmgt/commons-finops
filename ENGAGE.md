@@ -1,6 +1,6 @@
 # How to Engage with Commons FinOps
 
-Commons FinOps is offered at three layers: community (open and free), diagnostic (paid, scoped), and embedded (paid, ongoing). The choice depends on where your institution is and what you need next.
+Commons FinOps is an open-source FinOps standard for fiscal sponsors and the cores they host, grounded in Ostrom's eight design principles for commons governance. The repository, schema, and handbook are openly licensed (CC BY 4.0 docs, MIT code). Engagement beyond the repository is offered at three layers: community (open and free), diagnostic (paid, scoped), and embedded (paid, ongoing). The choice depends on where your institution is and what you need next.
 
 If you are unsure which layer fits, open a [GitHub issue](https://github.com/asnmgt/commons-finops/issues) or email andrew@asnmgt.com with a short description of your context. A 20-minute call is usually enough to point you to the right starting place.
 
