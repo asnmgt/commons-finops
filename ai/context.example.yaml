@@ -66,7 +66,20 @@ platforms:
   crypto_sub: "Bitwave"               # Digital-asset subledger
   crypto_custodian: "Coinbase Prime"  # Qualified crypto custodian
   card_processor: "Stripe"            # Card / donation processor
+  community: "Slack"                  # Community messaging platform
   external_accountant: "Your CPA firm"
+
+# ------------------------------------------------------------
+# CADENCE
+# ------------------------------------------------------------
+cadence:
+  payment_day: "Wednesdays"    # Weekly payment run day
+
+# ------------------------------------------------------------
+# POLICY METADATA
+# ------------------------------------------------------------
+policy:
+  effective_date: "2026-08-19"   # Effective date printed on templates
 
 # ------------------------------------------------------------
 # RATES

@@ -5,13 +5,14 @@ All notable changes to Commons FinOps are recorded here. Format: [Keep a Changel
 ## [unreleased]
 
 ### Added
-- **`templates/policies/`**: three org-agnostic policy templates adapted from live fiscal-sponsor practice.
+- **`templates/policies/`**: four org-agnostic policy templates adapted from live fiscal-sponsor practice.
   - `fiscal-policies-and-procedures-manual.md`: full nonprofit fiscal-policy manual (accounting, internal controls, revenue, expenses, assets, digital assets, fiscal sponsorship annex).
   - `financial-guidelines-for-sponsored-projects.md`: sponsee-facing companion doc — what counts as an in-books expense, how to code it, approval matrix, worked examples.
   - `expense-classification-guidelines.md`: five-principles + hard-rules coding guide with a decision-tree quick reference.
-  All three are token-templated: `{{ORG_NAME}}`, `{{THRESHOLD_DFO_REVIEW}}`, `{{PLATFORM_FISCAL_HOST}}`, etc. Every token is documented at the bottom of each doc and mapped to `ai/context.example.yaml`.
+  - `fiscal-project-onboarding-guide.md`: front-door doc for prospective projects. Fit assessment, expectations at signing, published 30-day onboarding sequence, working-relationship guide, and graduation / wind-down criteria.
+  All four are token-templated: `{{ORG_NAME}}`, `{{THRESHOLD_DFO_REVIEW}}`, `{{PLATFORM_FISCAL_HOST}}`, etc. Every token is documented at the bottom of each doc and mapped to `ai/context.example.yaml`.
 - **`ai/`**: local-context + AI-assistant plugin infrastructure.
-  - `context.example.yaml`: reference schema for org identity, approval thresholds, time windows, platform bindings, rates, and a free-form `local:` block for chart-of-accounts and project metadata.
+  - `context.example.yaml`: reference schema for org identity, approval thresholds, time windows, platform bindings, cadence, policy metadata, rates, and a free-form `local:` block for chart-of-accounts and project metadata.
   - `init.py`: interactive setup CLI that writes `context.yaml` at the repo root and adds it to `.gitignore`.
   - `render.py`: token-substitution renderer. Missing tokens render as `[SET IN CONTEXT.YAML: TOKEN]` so gaps are visible, not silent.
   - `mcp-server/`: [Model Context Protocol](https://modelcontextprotocol.io) server exposing rendered policies and local context as resources and tools. Wires up to Claude Desktop, Cursor, Continue, Zed, Windsurf, and any MCP-compatible client with a short JSON config snippet. Includes turnkey prompts for `classify_expense` and `approval_check`.

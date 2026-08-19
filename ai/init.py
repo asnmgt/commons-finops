@@ -74,6 +74,14 @@ def main() -> int:
         crypto_sub = prompt("Digital-asset subledger", "")
         crypto_custodian = prompt("Crypto custodian", "")
         card_processor = prompt("Card / donation processor", "Stripe")
+        community = prompt("Community messaging platform", "Slack")
+
+        print("\nCadence")
+        payment_day = prompt("Weekly payment run day", "Wednesdays")
+
+        print("\nPolicy metadata")
+        from datetime import date as _date
+        effective_date = prompt("Effective date for policy docs", _date.today().isoformat())
 
         print("\nRates")
         host_fee = prompt("Fiscal-sponsorship (host) fee", "10%")
@@ -114,7 +122,14 @@ platforms:
   crypto_sub: "{crypto_sub}"
   crypto_custodian: "{crypto_custodian}"
   card_processor: "{card_processor}"
+  community: "{community}"
   external_accountant: ""
+
+cadence:
+  payment_day: "{payment_day}"
+
+policy:
+  effective_date: "{effective_date}"
 
 rates:
   host_fee: "{host_fee}"

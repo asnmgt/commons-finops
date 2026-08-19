@@ -65,6 +65,10 @@ TOKEN_MAP = {
     "EXTERNAL_ACCOUNTANT": ("platforms", "external_accountant"),
 
     "HOST_FEE_RATE": ("rates", "host_fee"),
+
+    "PLATFORM_COMMUNITY": ("platforms", "community"),
+    "PAYMENT_CADENCE_DAY": ("cadence", "payment_day"),
+    "POLICY_EFFECTIVE_DATE": ("policy", "effective_date"),
 }
 
 
