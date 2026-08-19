@@ -1,0 +1,118 @@
+# =============================================================================
+# Commons FinOps — local context configuration
+# =============================================================================
+#
+# Copy this file to `context.yaml` in the repo root (it's gitignored) and
+# fill in your organization's values. The MCP server, render.py, and the
+# finops-init CLI all read from `context.yaml`.
+#
+# Anything you leave blank falls through to the "common" defaults documented
+# in the template variables section of each policy doc — the AI will render
+# the token as `[SET IN CONTEXT.YAML]` so unset values are visible, not silently
+# substituted with placeholder numbers.
+#
+# =============================================================================
+
+# ------------------------------------------------------------
+# ORGANIZATION IDENTITY
+# ------------------------------------------------------------
+org:
+  name: "Example Sponsor"                # Short name used throughout prose
+  legal_name: "Example Sponsor, Inc."    # Legal name including entity type
+  legal_name_upper: "EXAMPLE SPONSOR, INC."  # For title pages; auto-derived if omitted
+  state: "Delaware"                      # State of incorporation
+  ein: "12-3456789"                      # IRS Employer Identification Number
+  address: "123 Main Street, Anytown, ST 12345"
+
+# ------------------------------------------------------------
+# APPROVAL THRESHOLDS  (all USD)
+# ------------------------------------------------------------
+# These are the board-adopted authorization thresholds referenced throughout
+# the Fiscal Policies Manual and the Financial Guidelines. Adjust to your
+# board's actual delegations. The "common" values below come from mid-size
+# US 501(c)(3) fiscal sponsors ($1M–$10M annual budget).
+thresholds:
+  dfo_review: "$10,000"          # DFO review required above this
+  board_secondary: "$15,000"     # Board President secondary approval
+  competitive_bids: "$30,000"    # Three competitive bids required
+  board_exception: "$100,000"    # Full Board exception required
+  deviation: "$20,000"           # Budget-deviation prior approval
+  capitalization: "$5,000"       # Capitalize as fixed asset above this
+  software_review: "$2,500"      # Software / SaaS review threshold
+  s1099_min: "$600"              # 1099-NEC issuance floor ($600 federal min)
+  line_item_review: "$500"       # Category-move review threshold
+
+# ------------------------------------------------------------
+# TIME WINDOWS
+# ------------------------------------------------------------
+windows:
+  reimbursement: "30 days"           # Normal reimbursement submission window
+  reimbursement_adj: "30-day"        # Adjective form (e.g. "30-day window")
+  explanation: "60 days"             # Requires written explanation
+  dfo_approval: "90 days"            # Requires DFO approval before payment
+  miscode_flag: "30 days"            # Miscode-flag window after month close
+  crypto_conversion: "5 business days"       # Volatile-token conversion window
+  crypto_conversion_cap: "Five business days"  # Sentence-start form
+
+# ------------------------------------------------------------
+# PLATFORM BINDINGS
+# ------------------------------------------------------------
+# What tools does your organization actually use? These names appear in
+# prose throughout the policies. Leave a value blank to render as a generic
+# category (e.g. "your general-ledger accounting system").
+platforms:
+  gl: "QuickBooks Online"             # General ledger
+  fiscal_host: "Open Collective"      # Fiscal sponsorship platform
+  crypto_sub: "Bitwave"               # Digital-asset subledger
+  crypto_custodian: "Coinbase Prime"  # Qualified crypto custodian
+  card_processor: "Stripe"            # Card / donation processor
+  external_accountant: "Your CPA firm"
+
+# ------------------------------------------------------------
+# RATES
+# ------------------------------------------------------------
+rates:
+  host_fee: "10%"    # Default fiscal-sponsorship fee on gross receipts
+
+# ------------------------------------------------------------
+# LOCAL CONTEXT (free-form)
+# ------------------------------------------------------------
+# The MCP server exposes this section as an additional resource
+# (`context://local`) that your AI can read alongside the standard policies.
+# Use it for anything specific to your org that the templates don't cover:
+# chart-of-accounts mappings, project list, board composition, custom
+# approval routing, etc.
+local:
+  notes: |
+    Add any organization-specific notes here. The AI assistant will
+    read this alongside the rendered policies to give context-aware
+    answers.
+
+  chart_of_accounts:
+    # Map your account codes to a short description. Add as many as needed.
+    # These appear in the Financial Guidelines coding table.
+    # Format: "code": "account name"
+    "4010": "Contributed Revenue: Donations"
+    "4020": "Contributed Revenue: Grants"
+    "6010": "Personnel: Salaries and Wages"
+    "6100": "Legal and Professional Services"
+    "6310": "Project Expenses: Contractors"
+
+  projects:
+    # List of sponsored projects / cost centers. AI can use this to
+    # answer questions like "which project does this expense belong to?"
+    # - name: "Project Alpha"
+    #   class_code: "ALPHA"
+    #   purpose: "AI safety research"
+
+  people:
+    # Optional: your finance team so AI can suggest the right escalation.
+    dfo: "Jane Doe"
+    executive_director: "John Doe"
+    board_president: "Alex Smith"
+
+# ------------------------------------------------------------
+# VERSION
+# ------------------------------------------------------------
+# The Commons FinOps schema version this context targets. Do not edit.
+schema_version: "0.1"

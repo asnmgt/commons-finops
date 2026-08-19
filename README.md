@@ -41,6 +41,8 @@ Funders are signaling clearly that **automation is now a requirement, not a luxu
 | [`glossary/`](./glossary) | The Commons Language Glossary. Translates commons theory, OSS funding vocabulary, and traditional nonprofit finance into a single working vocabulary. |
 | [`case-studies/`](./case-studies) | Year-one record of Commons FinOps practice at Metagov. The Atlas Computing transition. The AWS gift reconciliation episode ($75K real receipt, $225K apparent value, fully traced). The endowment proposal. The systems stack. |
 | [`templates/`](./templates) | Operational templates: funding-block YAML template, monthly close checklist, audit-readiness checklist, sponsee onboarding checklist. |
+| [`templates/policies/`](./templates/policies) | Three ready-to-adopt policy templates: Fiscal Policies & Procedures Manual, Financial Guidelines for Sponsored Projects, Expense Classification Guidelines. Fully org-agnostic — token-templated with `{{ORG_NAME}}`, `{{THRESHOLD_DFO_REVIEW}}`, etc. |
+| [`ai/`](./ai) | Local-context configuration + Model Context Protocol server that renders these templates against your organization's values and serves them to Claude Desktop, Cursor, Continue, Zed, and other MCP-compatible AI assistants. |
 | [`ABOUT.md`](./ABOUT.md) | Author background, project history, scope. |
 | [`ENGAGE.md`](./ENGAGE.md) | How to engage. Tiers, pricing, contact. |
 | [`CHANGELOG.md`](./CHANGELOG.md) | Version history. |
@@ -58,8 +60,28 @@ Funders are signaling clearly that **automation is now a requirement, not a luxu
 1. **If you want the front door,** read this README and the handbook overview at [`handbook/00-overview.md`](./handbook/00-overview.md).
 2. **If you want to see the machine-readable standard,** open [`schema/SCHEMA.md`](./schema/SCHEMA.md) and the YAML examples in [`schema/examples/`](./schema/examples).
 3. **If you want to evaluate your own readiness,** start with [`readiness/foundation-readiness-guide.md`](./readiness/foundation-readiness-guide.md).
-4. **If you want the theoretical foundation,** read [`foundation/eight-principles-from-the-operators-seat.md`](./foundation/eight-principles-from-the-operators-seat.md).
-5. **If you want to engage,** see [`ENGAGE.md`](./ENGAGE.md).
+4. **If you want ready-to-adopt policies,** open [`templates/policies/`](./templates/policies). Three templates cover the fiscal policies manual, sponsee-facing guidelines, and coding guidance.
+5. **If you want your AI assistant to answer questions using your organization's policies and thresholds,** set up the [AI plugin](./ai) (`python ai/init.py`, then wire the [MCP server](./ai/mcp-server) into Claude Desktop, Cursor, Continue, or Zed).
+
+## AI plugin: your policies, your assistant
+
+The policy templates in [`templates/policies/`](./templates/policies) are org-agnostic on purpose — every threshold, platform name, and identifier is a token like `{{THRESHOLD_DFO_REVIEW}}` or `{{PLATFORM_FISCAL_HOST}}`. The [`ai/`](./ai) folder resolves those tokens against your local `context.yaml` and exposes the rendered documents to any AI assistant that speaks the [Model Context Protocol](https://modelcontextprotocol.io).
+
+```bash
+# One-time setup
+pip install pyyaml mcp
+python ai/init.py
+
+# Wire the MCP server into your assistant
+# (see ai/mcp-server/README.md for Claude Desktop, Cursor, Continue, Zed configs)
+```
+
+Once connected, your AI can answer *"does a $28,000 contractor engagement need three bids?"* by reading your board-adopted thresholds, not the model's memorized generalities. See [`ai/README.md`](./ai/README.md) for the full walkthrough.
+
+## More entry points
+
+- **If you want the theoretical foundation,** read [`foundation/eight-principles-from-the-operators-seat.md`](./foundation/eight-principles-from-the-operators-seat.md).
+- **If you want to engage,** see [`ENGAGE.md`](./ENGAGE.md).
 
 ## Why this works at the theory layer
 

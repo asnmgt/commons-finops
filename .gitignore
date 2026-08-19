@@ -27,3 +27,12 @@ TODO.local.md
 *.iml
 *.patch
 *.tar.gz
+
+# Local Commons FinOps context (created by finops-init)
+context.yaml
+context.yml
+rendered/
+
+# Python bytecode from the AI plugin
+__pycache__/
+*.pyc
